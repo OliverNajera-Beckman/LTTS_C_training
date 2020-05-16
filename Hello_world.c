@@ -1,39 +1,37 @@
 #include <stdio.h>
+void anup_excerice();
+
 int main()
 {
 	printf("Hello Team 2\n");
-	char team_member[] = "anup";
-	switch (team_member)
-	{
-		case "anup:
-			anup_excerice();
-			
-		case "oliver":
-			exit;
-			
-		case "vipin":
-			exit;
-			
-		case "maurice":
-			exit;
-		
-		case "harris":
-			exit;
-			
-		default:
-			do_nothing();
-	}
-	
-	
+ 	team2("anup");
 	return 0;
 }
 
-void anup_exerice()
-{
-	return 0;
-}
-
-void do_nothing()
-{
-	return 0;
+void team2 (char name[10]) {
+    switch (name[10]) 
+    {
+        case name["anup"]:
+            printf("write your function here\n");
+	    break;
+		    
+        case name["oliver"]:
+            printf("write your function here\n");
+	    break;
+		    
+        case name["vipin"] :
+            printf("write your function here\n");
+	    break;
+		    
+        case name["harris"] :
+            printf("write your function here\n");
+	    break;
+		    
+        case name["maurice"] :
+            printf("write your function here\n");		    
+	    break;
+		    
+        default :
+            printf("Enter a valid choice: \n");
+    }
 }
