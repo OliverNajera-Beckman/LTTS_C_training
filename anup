@@ -1,7 +1,0 @@
-#include <stdio.h>
-#include "team2.h"
-
-void swap2numbers()
-{
-  printf("TEST");
-}
