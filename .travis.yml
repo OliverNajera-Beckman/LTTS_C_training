@@ -11,5 +11,5 @@ install:
 script:
   - echo "Reached Script Section"
  
-  - gcc   	Linkfile_multifile/Hello_world.c Linkfile_multifile/anup.c -o output
+  - gcc   	Hello_world.c anup.c -o output
   - ./output
