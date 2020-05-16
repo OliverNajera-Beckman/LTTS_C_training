@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "team2.h"
 
 int main()
 {
@@ -9,6 +10,7 @@ int main()
 	{
 		case 'A':
 			printf("Anup to write function");
+			swap2numbers();
 			break;
 		case 'O':
 			printf("Oliver to write function");
