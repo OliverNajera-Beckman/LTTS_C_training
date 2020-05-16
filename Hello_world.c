@@ -10,7 +10,7 @@ int main()
 	{
 		case 'A':
 			printf("Anup to write function");
-			swap2numbers();
+			//swap2numbers();
 			break;
 		case 'O':
 			printf("Oliver to write function");
