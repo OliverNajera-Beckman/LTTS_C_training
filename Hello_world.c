@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "team2.h"
+#include <stdio.h>
 
 int main()
 {
