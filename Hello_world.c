@@ -1,5 +1,4 @@
 #include <stdio.h>
-void anup_excerice();
 
 int main()
 {
