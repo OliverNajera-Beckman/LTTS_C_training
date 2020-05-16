@@ -12,3 +12,6 @@ script:
   - echo "Reached Script Section"
   - gcc   	Hello_world.c  -o Hello_world
   - ./Hello_world
+  
+    - gcc   	Linkfile_multifile/Hello_world.c Linkfile_multifile/anup.c -o output
+  - ./output
