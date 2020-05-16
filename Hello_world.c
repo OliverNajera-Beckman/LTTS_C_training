@@ -33,4 +33,7 @@ void anup_exerice()
 	return 0;
 }
 
-
+void do_nothing()
+{
+	return 0;
+}
