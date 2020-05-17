@@ -14,6 +14,7 @@ int main()
 			break;
 		case 'O':
 			printf("Oliver to write function");
+			concat2strings();
 			break;
 		case 'M':
 			printf("Maurice to write function");
