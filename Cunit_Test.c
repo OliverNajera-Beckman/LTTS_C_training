@@ -20,14 +20,14 @@ void test_countsNumberOfDigits(void)
     CU_ASSERT(countsNumberOfDigits(111) == 3);
 }
 
-/*void test_Set_Overfrequency_Fault(void)
+void test_Set_Overfrequency_Fault(void)
 {
     CU_ASSERT(Set_Overfrequency_Fault(419) == 0);
-    CU_ASSERT(Set_Overfrequency_Fault(420) == 0);
-    CU_ASSERT(Set_Overfrequency_Fault(421) == 1);
+    //CU_ASSERT(Set_Overfrequency_Fault(420) == 0);
+    //CU_ASSERT(Set_Overfrequency_Fault(421) == 1);
 
 }
-*/
+
 
 int main() {
     // Initialize CUnit test registry
@@ -66,7 +66,7 @@ int main() {
    
 
      // Add suite_test_Set_Overfrequency_Fault to registry
-   /* CU_pSuite suite_Set_Overfrequency_Fault = CU_add_suite("Set_Overfrequency_Fault_test", init_suite, clean_suite);
+    CU_pSuite suite_Set_Overfrequency_Fault = CU_add_suite("Set_Overfrequency_Fault_test", init_suite, clean_suite);
     if (NULL == suite_Set_Overfrequency_Fault) 
     {
         CU_cleanup_registry();
@@ -78,5 +78,5 @@ int main() {
     {
       CU_cleanup_registry();
       return CU_get_error();
-    }*/
+    }
 }
