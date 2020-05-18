@@ -7,5 +7,6 @@
 
 void swap2numbers();
 //string concat2strings();
+int countsNumberOfDigits();
 
 #endif
