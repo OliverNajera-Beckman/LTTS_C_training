@@ -15,6 +15,11 @@ void test_maxi(void)
     CU_ASSERT(maxi(0,2) == 2);
 }
 
+void test_countsNumberOfDigits(void)
+{
+    CU_ASSERT(countsNumberOfDigits(111) == 3);
+}
+
 int main() {
     // Initialize CUnit test registry
     if (CUE_SUCCESS != CU_initialize_registry())
@@ -35,6 +40,21 @@ int main() {
       return CU_get_error();
     }
     
+     // Add suite_test_countsNumberOfDigits to registry
+    CU_pSuite suite_countsNumberOfDigits = CU_add_suite("countsNumberOfDigits_test", init_suite, clean_suite);
+    if (NULL == suite_countsNumberOfDigits) 
+    {
+        CU_cleanup_registry();
+        return CU_get_error();
+    }
+
+    // add test_countsNumberOfDigits  to suite_countsNumberOfDigits 
+    if ((NULL == CU_countsNumberOfDigits_test(suite_countsNumberOfDigits , "countsNumberOfDigits _fun", test_countsNumberOfDigits)))
+    {
+      CU_cleanup_registry();
+      return CU_get_error();
+    }
+   
     CU_basic_set_mode(CU_BRM_VERBOSE);
     CU_basic_run_tests(); // OUTPUT to the screen
     CU_cleanup_registry();
