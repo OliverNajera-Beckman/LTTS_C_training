@@ -10,7 +10,7 @@ int main()
 	{
 		case 'A':
 			printf("Anup to write function");
-			int FAULT_STATUS = Set_Overfrequency_Fault();
+			int FAULT_STATUS = Set_Overfrequency_Fault(450);
 			break;
 		case 'O':
 			printf("Oliver to write function");
