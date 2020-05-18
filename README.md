@@ -1,4 +1,4 @@
-# LTTS_C_training
+# C_training
 training course for C concepts while in lockdown
 
 # Build Command
