@@ -23,8 +23,8 @@ void test_countsNumberOfDigits(void)
 void test_Set_Overfrequency_Fault(void)
 {
     CU_ASSERT(Set_Overfrequency_Fault(419) == 0);
-    //CU_ASSERT(Set_Overfrequency_Fault(420) == 0);
-    //CU_ASSERT(Set_Overfrequency_Fault(421) == 1);
+    CU_ASSERT(Set_Overfrequency_Fault(420) == 0);
+    CU_ASSERT(Set_Overfrequency_Fault(421) == 1);
 
 }
 
