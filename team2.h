@@ -5,7 +5,21 @@
 #include <stdlib.h>
 #include <string.h>
 
-void swap2numbers();
+/* Anup***********************************/
+void Timer (int number_of_seconds);
+int Read_Freq ();
+void log_nvm(int fault_code);
+void Set_Overfrequency_Fault();
+
+#define OVER_FREQUENCY_TIMER 5
+#define TRUE 1
+#define FALSE 0
+
+int OF_COND = FALSE;
+int OF_FAULT = FALSE;
+int FAULT_CODE = 0;
+/* Anup***********************************/
+
 //string concat2strings();
 int countsNumberOfDigits(long long n);
 
