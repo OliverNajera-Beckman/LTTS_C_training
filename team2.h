@@ -11,7 +11,7 @@
 void Timer (int number_of_seconds);
 int Read_Freq ();
 void log_nvm(int fault_code);
-int Set_Overfrequency_Fault();
+int Set_Overfrequency_Fault(int FREQ);
 
 #define OVER_FREQUENCY_TIMER 5
 #define TRUE 1
