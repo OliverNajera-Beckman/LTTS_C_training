@@ -15,7 +15,16 @@ int FAULT_CODE = 0;
   b = temp;
 }*/
 
-int Set_Overfrequency_Fault()
+/************************************************************
+ *
+ * Function Name: Set_Overfrequency_Fault
+ * Description: The function is to provide delay in seconds
+ * Inputs: 'Frequency' in HZ
+ * Outputs: Overfrequency Fault - TRUE or FALSE
+ *          FAULT_CODE - 2025 or 0
+ *
+ ************************************************************/
+int Set_Overfrequency_Fault(int FREQ)
 {
 	int Frequency = 0;
 
@@ -41,6 +50,14 @@ int Set_Overfrequency_Fault()
 	return OF_FAULT;
 }
 
+/************************************************************
+ *
+ * Function Name: Read_Freq
+ * Description: This function is to read frequency
+ * Inputs: None
+ * Outputs: Frequency
+ *
+ ************************************************************/
 int Read_Freq()
 {
     // Converting time into milli_seconds
@@ -53,6 +70,14 @@ int Read_Freq()
 
 }
 
+/************************************************************
+ *
+ * Function Name: log_nvm
+ * Description:This function displays fault code for OF_FAULT
+ * Inputs:None
+ * Outputs:FAULT CODE - 0 or 2025
+ *
+ ************************************************************/
 void log_nvm(int fault_code)
 {
 
@@ -61,6 +86,14 @@ void log_nvm(int fault_code)
 
 }
 
+/************************************************************
+ *
+ * Function Name: Timer
+ * Description: The function is to provide delay in seconds
+ * Inputs: 'Time' in seconds
+ * Outputs: Wait for 'Time' in seconds
+ *
+ ************************************************************/
 void Timer(int number_of_seconds)
 {
     // Converting time into milli_seconds
