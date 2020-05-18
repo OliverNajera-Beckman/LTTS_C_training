@@ -5,6 +5,21 @@ compiler:
 before_install:
   - sudo apt-get update
   - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+   #Quick fix using one subversion previous
+  - wget http://downloads.sourceforge.net/project/cunit/CUnit/2.1-2/CUnit-2.1-2-src.tar.bz2
+  - tar -xvjpf CUnit-2.1-2-src.tar.bz2
+  - cd CUnit-2.1-2
+  - mkdir -p $HOME/local
+  - ./configure –prefix=$HOME/local
+  - make clean
+  - make
+  - make install
+  - export C_INCLUDE_PATH=$TRAVIS_BUILD_DIR/include:$C_INCLUDE_PATH
+  - export LIBRARY_PATH=$TRAVIS_BUILD_DIR/lib:$LIBRARY_PATH
+  - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/lib:$LD_LIBRARY_PATH
+  - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
+  #Come back to the repo unwarpped folder
+  - cd ..
 install:
   - echo  "Reached Install Section"
 
@@ -13,3 +28,8 @@ script:
  
   - gcc   	Hello_world.c anup.c -o output
   - ./output
+  #Added for Cunit
+  - echo "Reached Script Section - CUnit_Test"
+  #- gcc -Wall -I$HOME/local/include Cunit_Test.c Helloworld.c -L$HOME/local/lib -lcunit -o CUnit_Test
+  #- ./CUnit_Test
+
