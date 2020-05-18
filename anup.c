@@ -1,6 +1,9 @@
 #include "team2.h"
 #include <stdio.h>
 
+int OF_FAULT = 0;
+int FAULT_CODE = 0;
+
 /*void swap2numbers()
 {
   printf("TEST");
