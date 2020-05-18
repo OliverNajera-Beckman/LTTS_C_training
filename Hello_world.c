@@ -22,7 +22,7 @@ int main()
 		case 'V':
 			printf("Vipin to write function");
 			// Program to Count the Number of Digits
-			int count = countsNumberOfDigits();
+			int count = countsNumberOfDigits(60978);
 			printf("Number of digits: %d", count);
 			break;
 		case 'H':
