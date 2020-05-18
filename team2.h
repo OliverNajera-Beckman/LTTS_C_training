@@ -6,6 +6,6 @@
 #include <string.h>
 
 void swap2numbers();
-string concat2strings();
+//string concat2strings();
 
 #endif
