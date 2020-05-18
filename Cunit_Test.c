@@ -76,8 +76,8 @@ int main() {
         return CU_get_error();
     }
 
-    // add test_Set_Overfrequency_Fault  to suite_Set_Overfrequency_Fault 
-    if ((NULL == CU_add_test(suite_Set_Overfrequency_Fault , "Set_Overfrequency_Fault_fun", test_Set_Overfrequency_Fault)))
+    // add test_countsNumberOfDigits  to suite_Set_Overfrequency_Fault 
+    if ((NULL == CU_add_test(suite_Set_Overfrequency_Fault , "countsNumberOfDigits_fun", test_countsNumberOfDigits)))
     {
       CU_cleanup_registry();
       return CU_get_error();
