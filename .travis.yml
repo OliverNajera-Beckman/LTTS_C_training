@@ -30,6 +30,6 @@ script:
   - ./output
   #Added for Cunit
   - echo "Reached Script Section - CUnit_Test"
-  - gcc -Wall -I$HOME/local/include Cunit_Test.c Vipin.c -L$HOME/local/lib -lcunit -o CUnit_Test
+  - gcc -Wall -I$HOME/local/include Cunit_Test.c Vipin.c anup.c -L$HOME/local/lib -lcunit -o CUnit_Test
   - ./CUnit_Test
 
