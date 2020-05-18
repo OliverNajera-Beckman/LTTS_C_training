@@ -15,7 +15,7 @@ int FAULT_CODE = 0;
   b = temp;
 }*/
 
-void Set_Overfrequency_Fault()
+int Set_Overfrequency_Fault()
 {
 	int Frequency = 0;
 
@@ -38,6 +38,7 @@ void Set_Overfrequency_Fault()
 		log_nvm(0);
 	}
 	printf("OF_FAULT = %d\n", OF_FAULT);
+	return OF_FAULT;
 }
 
 int Read_Freq()
