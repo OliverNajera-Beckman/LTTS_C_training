@@ -49,7 +49,7 @@ int main() {
     }
 
     // add test_countsNumberOfDigits  to suite_countsNumberOfDigits 
-    if ((NULL == CU_countsNumberOfDigits_test(suite_countsNumberOfDigits , "countsNumberOfDigits _fun", test_countsNumberOfDigits)))
+    if ((NULL == CU_add_test(suite_countsNumberOfDigits , "countsNumberOfDigits_fun", test_countsNumberOfDigits)))
     {
       CU_cleanup_registry();
       return CU_get_error();
