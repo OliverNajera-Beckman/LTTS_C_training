@@ -6,16 +6,7 @@
 #include <string.h>
 
 /* Anup***********************************/
-void Timer (int number_of_seconds);
-int Read_Freq ();
-void log_nvm(int fault_code);
-void Set_Overfrequency_Fault();
-
-#define OVER_FREQUENCY_TIMER 5
-#define TRUE 1
-#define FALSE 0
-
-/* Anup***********************************/
+void swap2numbers();
 
 //string concat2strings();
 int countsNumberOfDigits(long long n);
