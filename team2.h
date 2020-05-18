@@ -17,8 +17,7 @@ void Set_Overfrequency_Fault();
 #define TRUE 1
 #define FALSE 0
 
-int OF_FAULT = 0;
-int FAULT_CODE = 0;
+
 /* Anup***********************************/
 
 
