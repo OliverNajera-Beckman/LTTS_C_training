@@ -7,12 +7,9 @@
 ** Date: 15/05/2020
 ** Author: Vipin
 *********************************************************************************************/
-int countsNumberOfDigits() {
-    long long n;
+int countsNumberOfDigits(long long n) {
     int count = 0;
-    printf("Enter an integer: ");
-    scanf("%lld", &n);
- 
+
     while (n != 0) {
         n /= 10;     // n = n/10
         ++count;
