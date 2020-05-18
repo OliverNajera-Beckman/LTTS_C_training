@@ -4,7 +4,7 @@
 int main()
 {
 	printf("Hello Team 2\n");
-	char team2 = 'V';
+	char team2 = 'A';
 	
 	switch(team2)
 	{
