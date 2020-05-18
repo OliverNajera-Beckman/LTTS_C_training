@@ -29,7 +29,7 @@ script:
   - gcc   	Hello_world.c anup.c Vipin.c -o output
   - ./output
   #Added for Cunit
-  - echo "Reached Script Section - CUnit_Test"
-  - gcc -Wall -I$HOME/local/include Cunit_Test.c Vipin.c -L$HOME/local/lib -lcunit -o CUnit_Test
-  - ./CUnit_Test
+ # - echo "Reached Script Section - CUnit_Test"
+ # - gcc -Wall -I$HOME/local/include Cunit_Test.c Vipin.c -L$HOME/local/lib -lcunit -o CUnit_Test
+ # - ./CUnit_Test
 
