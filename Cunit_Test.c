@@ -22,7 +22,7 @@ void test_countsNumberOfDigits(void)
 
 void test_Set_Overfrequency_Fault(void)
 {
-    CU_ASSERT_EQUAL(Set_Overfrequency_Fault(OF_FAULT,1));
+    CU_ASSERT_EQUAL(Set_Overfrequency_Fault(OF_FAULT,1)==1);
 }
 
 int main() {
