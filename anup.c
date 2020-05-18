@@ -46,8 +46,8 @@ int Read_Freq()
     int freq;
 
    // printf("Enter the frequency\n");
-    scanf("%d", &freq);
-
+    //scanf("%d", &freq);
+    freq = 450;
     return freq;
 
 }
