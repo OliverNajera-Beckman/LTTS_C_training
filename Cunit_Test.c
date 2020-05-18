@@ -20,6 +20,11 @@ void test_countsNumberOfDigits(void)
     CU_ASSERT(countsNumberOfDigits(111) == 3);
 }
 
+void test_Set_Overfrequency_Fault(void)
+{
+    CU_ASSERT_EQUAL(Set_Overfrequency_Fault(OF_FAULT) == 1);
+}
+
 int main() {
     // Initialize CUnit test registry
     if (CUE_SUCCESS != CU_initialize_registry())
@@ -55,8 +60,33 @@ int main() {
       return CU_get_error();
     }
    
+        // add test_Set_Overfrequency_Fault  to suite_Set_Overfrequency_Fault 
+    if ((NULL == CU_add_test(suite_Set_Overfrequency_Fault , "Set_Overfrequency_Fault_fun", test_Set_Overfrequency_Fault)))
+    {
+      CU_cleanup_registry();
+      return CU_get_error();
+    }
+	
+	//ANUP***************************************************************************************************
+     // Add suite_test_Set_Overfrequency_Fault to registry
+    CU_pSuite suite_Set_Overfrequency_Fault = CU_add_suite("Set_Overfrequency_Fault_test", init_suite, clean_suite);
+    if (NULL == suite_Set_Overfrequency_Fault) 
+    {
+        CU_cleanup_registry();
+        return CU_get_error();
+    }
+
+    // add test_Set_Overfrequency_Fault  to suite_Set_Overfrequency_Fault 
+    if ((NULL == CU_add_test(suite_Set_Overfrequency_Fault , "Set_Overfrequency_Fault_fun", test_Set_Overfrequency_Fault)))
+    {
+      CU_cleanup_registry();
+      return CU_get_error();
+    }
+ 	//ANUP***************************************************************************************************
+    
     CU_basic_set_mode(CU_BRM_VERBOSE);
     CU_basic_run_tests(); // OUTPUT to the screen
     CU_cleanup_registry();
     return CU_get_error();
 }
+
