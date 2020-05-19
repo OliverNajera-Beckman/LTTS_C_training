@@ -26,7 +26,7 @@ install:
 script:
   - echo "Reached Script Section"
  
-  - gcc   	Hello_world.c anup.c Vipin.c -o output
+  - gcc   	Hello_world.c anup.c Vipin.c oliver.c -o output
   - ./output
   #Added for Cunit
   - echo "Reached Script Section - CUnit_Test"
