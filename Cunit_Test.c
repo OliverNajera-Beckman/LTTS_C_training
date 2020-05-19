@@ -20,6 +20,10 @@ void test_countsNumberOfDigits(void)
     CU_ASSERT(countsNumberOfDigits(111) == 3);
 }
 
+void test_concat2strings(void){
+	CU_ASSERT_STRING_EQUAL(concat2strings("01","23"), "0123");
+}
+
 void test_Set_Overfrequency_Fault(void)
 {
     CU_ASSERT(Set_Overfrequency_Fault(419) == 0);
@@ -64,8 +68,22 @@ int main() {
       return CU_get_error();
     }
    
-
-     // Add suite_test_Set_Overfrequency_Fault to registry
+    // add test_concat2strings to registry
+    CU_pSuite suite_concat2strings = CU_add_suite("concat2strings_test", init_suite, clean_suite);
+        if (NULL == suite_concat2strings) 
+        {
+            CU_cleanup_registry();
+            return CU_get_error();
+        }
+        
+    // add test_concat2strings suite_concat2strings
+        if ((NULL == CU_add_test(suite_concat2strings , "concat2strings_fun", test_concat2strings)))
+        {
+          CU_cleanup_registry();
+          return CU_get_error();
+        }
+        
+    // Add suite_test_Set_Overfrequency_Fault to registry
     CU_pSuite suite_Set_Overfrequency_Fault = CU_add_suite("Set_Overfrequency_Fault_test", init_suite, clean_suite);
     if (NULL == suite_Set_Overfrequency_Fault) 
     {
