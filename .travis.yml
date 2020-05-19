@@ -26,10 +26,10 @@ install:
 script:
   - echo "Reached Script Section"
  
-  - gcc   	Hello_world.c anup.c Vipin.c -o output
+  - gcc   	Hello_world.c anup.c Vipin.c oliver.c -o output
   - ./output
   #Added for Cunit
   - echo "Reached Script Section - CUnit_Test"
-  - gcc -Wall -I$HOME/local/include Cunit_Test.c Vipin.c -L$HOME/local/lib -lcunit -o CUnit_Test
+  - gcc -Wall -I$HOME/local/include Cunit_Test.c Vipin.c anup.c -L$HOME/local/lib -lcunit -o CUnit_Test
   - ./CUnit_Test
 
