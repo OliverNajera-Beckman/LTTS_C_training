@@ -3,15 +3,17 @@
  *
  *  Created on: May 16, 2020
  *      Author: najera
+ * in my experiance ability to manilupate strings of filenames was absolutely paramount
+ * so I decided to start there
  */
+#include <stdio.h>
 #include <string.h>
 
-string concat2strings(){
-	char word1[50],word2[50],word3[100];
+char[] concat2strings(char word1[],char word2[]){
+	char[] word3;
+	printf("first string is %s\n",word1 );
+	printf("second string is %s\n",word2 );
 
-	word1="stay";
-	word2="healthy";
-
-	word3= word1+word2;
+	word3= strcat(word1,word2);
 	return word3;
 }

@@ -9,18 +9,19 @@ int main()
 	switch(team2)
 	{
 		case 'A':
-			printf("Anup to write function");
+			printf("Anup to write function\n");
 			int FAULT_STATUS = Set_Overfrequency_Fault(450);
 			break;
 		case 'O':
-			printf("Oliver to write function");
-			//concat2strings();
+			printf("Oliver to write function\n");
+			//function to concatenate two strings
+			printf ("combined string is %s\n",concat2strings("two ","strings"));
 			break;
 		case 'M':
-			printf("Maurice to write function");
+			printf("Maurice to write function\n");
 			break;
 		case 'V':
-			printf("Vipin to write function");
+			printf("Vipin to write function\n");
 			// Program to Count the Number of Digits
 			int count = countsNumberOfDigits(60978);
 			printf("Number of digits: %d", count);
