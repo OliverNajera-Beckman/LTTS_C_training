@@ -9,8 +9,8 @@
 #include <stdio.h>
 #include <string.h>
 
-char[] concat2strings(char[] word1,char[] word2 ){
-	char[] word3;
+char concat2strings(char word1[],char word2[] ){
+	char word3[];
 	printf("first string is %s\n",word1);
 	printf("second string is %s\n",word2);
 
