@@ -1,11 +1,5 @@
-/*
- * Maurice.c
- *
- *  Created on: May 16, 2020
- *      Author: Maurice Wright
- */
 
-
+#include "team2.h"
 #include <stdio.h>
 
 int calculate(float a, float b, char operator)
