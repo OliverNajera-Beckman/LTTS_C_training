@@ -1,5 +1,6 @@
 #include "team2.h"
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -27,10 +28,10 @@ int main()
 			printf("Number of digits: %d", count);
 			break;
 		case 'H':
-			printf("Harris to write function");
+			printf("Harris to write function\n");
 			break;
 		default:
-			printf("Enter correct team member");
+			printf("Enter correct team member\n");
 			
 	}
 	
