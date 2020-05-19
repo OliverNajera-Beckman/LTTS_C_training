@@ -21,7 +21,7 @@ int Set_Overfrequency_Fault(int FREQ);
 /* Anup***********************************/
 
 
-string concat2strings();
+char concat2strings();
 int countsNumberOfDigits(long long n);
 /* Maurice */
 int calculate(float a, float b, char operator);
