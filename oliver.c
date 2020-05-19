@@ -14,6 +14,6 @@ char concat2strings(char *word1,char *word2 ){
 	printf("first string is %s\n",word1);
 	printf("second string is %s\n",word2);
 
-	word3 = strcat(word1,word2);
+	*word3 = strcat(word1,word2);
 	return word3;
 }
