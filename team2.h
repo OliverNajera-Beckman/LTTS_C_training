@@ -20,8 +20,8 @@ int Set_Overfrequency_Fault(int FREQ);
 
 /* Anup***********************************/
 
-
-char concat2strings(char,char);
+/*Oliver*/
+const char* concat2strings(char,char);
 int countsNumberOfDigits(long long n);
 /* Maurice */
 int calculate(float a, float b, char operator);
