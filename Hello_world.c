@@ -39,6 +39,10 @@ int main()
 			break;
 		case 'H':
 			printf("Harris to write function\n");
+			printf("Enter a number of terms: \n");
+                        scanf("%d", &num);
+   			printf("Fibonacci Series:");
+			printf(" %d ",fibonacci(i));
 			break;
 		default:
 			printf("Enter correct team member\n");
