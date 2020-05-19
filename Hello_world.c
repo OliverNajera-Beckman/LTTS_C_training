@@ -15,7 +15,7 @@ int main()
 		case 'O':
 			printf("Oliver to write function\n");
 			//function to concatenate two strings
-			printf ("combined string is %s\n",concat2strings("two ","strings"));
+			printf ("combined string is %s\n",concat2strings("two","strings"));
 			break;
 		case 'M':
 			printf("Maurice to write function\n");
