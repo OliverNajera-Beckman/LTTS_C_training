@@ -10,10 +10,10 @@
 #include <string.h>
 
 char concat2strings(char *word1,char *word2 ){
-	char word3[50];
+	//char word3[50];
 	printf("first string is %s\n",word1);
 	printf("second string is %s\n",word2);
 
 	strcat(word1,word2);
-	return word1;
+	return *word1;
 }
