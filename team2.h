@@ -26,4 +26,7 @@ int countsNumberOfDigits(long long n);
 /* Maurice */
 int calculate(float a, float b, char operator);
 
+/*Harris*/
+int fibonacci(int num)
+
 #endif
