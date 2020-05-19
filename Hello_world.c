@@ -20,6 +20,14 @@ int main()
 			break;
 		case 'M':
 			printf("Maurice to write function\n");
+			char operator;
+			double first, second;
+    			printf("Enter an operator (+, -, *,): ");
+   			scanf("%c", &operator);
+			printf("\n Enter two operands: ");
+			scanf("%.2f %.2f", &first, &second);
+			float result = calculate(first, second, operator);
+			printf("Result is: %.2f", result );
 			break;
 		case 'V':
 			printf("Vipin to write function\n");
