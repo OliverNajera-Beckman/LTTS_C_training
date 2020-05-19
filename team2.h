@@ -22,8 +22,8 @@ int Set_Overfrequency_Fault(int FREQ);
 
 
 //string concat2strings();
-int countsNumberOfDigits(long long n);
+//int countsNumberOfDigits(long long n);
 
-int calculate(float a, float b, char operator);
+//int calculate(float a, float b, char operator);
 
 #endif
