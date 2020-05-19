@@ -24,8 +24,10 @@ int main()
 			double first, second;
     			printf("Enter an operator (+, -, *,): ");
    			scanf("%c", &operator);
-			printf("\n Enter two operands: ");
-			scanf("%.2f %.2f", &first, &second);
+			printf("\n Enter first operand: ");
+			scanf("%f", &first);
+			printf("\n Enter second operand: ");
+			scanf("%f", &second);
 			float result = calculate(first, second, operator);
 			printf("Result is: %.2f", result );
 			break;
